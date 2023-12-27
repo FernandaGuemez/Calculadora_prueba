@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        function calcula(operacion){
+            var n1 = document.calc.n1.value
+            var n2 = document.calc.n2.value 
+            var result = eval(n1 + operacion + n2)
+            document.calc.Resultado.value = result
+        }
+        </script> 
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form name="calc">
+        <p>Escribe un número</p>
+        <input type="text" name="n1" value="" size="12">
+        <br>
+        <p>Escribe otro número</p>
+        <input type="text" name="n2" value="" size="12">
+        <br>
+        <p>Operación:</p>
+        <input type="button" value="+" onclick="calcula('+')">
+
+        <br>
+        Resultado:
+        <input type="text" name="Resultado" value="0" size="12">
+    </form>
+    <div>
+        <a href="tabla1.html">Tabla del 1</a>
+        <a href="tabla2.html">Tabla del 2</a>
+    </div>
+ 
+</body>
+</html>
